@@ -14,7 +14,7 @@
 <body>
     <header class="site-header">
         <div class="container nav-wrap">
-            <a class="logo" href="#pocetna" aria-label="Početna stranica"><span>π</span> Instrukcije iz matematike</a>
+            <a class="logo" href="#pocetna" aria-label="Početna stranica"><span>π</span> Instruktivna nastava</a>
             <nav class="main-nav" aria-label="Glavna navigacija">
                 <a class="active" href="#pocetna">Početna</a>
                 <a href="#motivacija">Motivacija</a>
@@ -57,14 +57,59 @@
         <section class="section experiences" id="recenzije">
             <div class="container">
                 <div class="section-heading"><div><p class="eyebrow"><span></span> Recenzije</p><h2>Iskustva učenika<br><em>i studenata.</em></h2></div></div>
+                <div class="review-filters" aria-label="Filtriraj recenzije po školskoj godini">
+                    <button class="review-filter" type="button" data-review-year="all" aria-pressed="true">Sve</button>
+                    <button class="review-filter" type="button" data-review-year="2017/2018" aria-pressed="false">2017/2018</button>
+                    <button class="review-filter" type="button" data-review-year="2018/2019" aria-pressed="false">2018/2019</button>
+                    <button class="review-filter" type="button" data-review-year="2020/2021" aria-pressed="false">2020/2021</button>
+                    <button class="review-filter" type="button" data-review-year="2021/2022" aria-pressed="false">2021/2022</button>
+                    <button class="review-filter" type="button" data-review-year="2022/2023" aria-pressed="false">2022/2023</button>
+                    <button class="review-filter" type="button" data-review-year="2023/2024" aria-pressed="false">2023/2024</button>
+                    <button class="review-filter" type="button" data-review-year="2024/2025" aria-pressed="false">2024/2025</button>
+                </div>
                 <div class="review-grid">
-                    <figure class="review-placeholder is-empty review-current"><img class="review-image" alt="Screenshot recenzije 1" loading="lazy"><figcaption>Screenshot recenzije 1</figcaption></figure>
-                    <figure class="review-placeholder is-empty"><img class="review-image" alt="Screenshot recenzije 2" loading="lazy"><figcaption>Screenshot recenzije 2</figcaption></figure>
-                    <figure class="review-placeholder is-empty"><img class="review-image" alt="Screenshot recenzije 3" loading="lazy"><figcaption>Screenshot recenzije 3</figcaption></figure>
+                    <figure class="review-placeholder is-empty review-current" data-review-year="all"><img class="review-image" src="assets/napomena-motivacija.png" alt="Napomena o motivaciji" loading="lazy"><figcaption>Napomena o motivaciji</figcaption></figure>
+                    <figure class="review-placeholder is-empty" data-review-year="2024/2025"><img class="review-image" src="assets/ss1.png" alt="Screenshot recenzije 1, 2024/2025" loading="lazy"><figcaption>Screenshot recenzije 1</figcaption></figure>
+                    <figure class="review-placeholder is-empty" data-review-year="2023/2024"><img class="review-image" src="assets/ss2.png" alt="Screenshot recenzije 2, 2023/2024" loading="lazy"><figcaption>Screenshot recenzije 2</figcaption></figure>
+                    <figure class="review-placeholder is-empty" data-review-year="2023/2024"><img class="review-image" src="assets/ss3.png" alt="Screenshot recenzije 3, 2023/2024" loading="lazy"><figcaption>Screenshot recenzije 3</figcaption></figure>
+                    <figure class="review-placeholder is-empty" data-review-year="2023/2024"><img class="review-image" src="assets/ss8.png" alt="Screenshot recenzije 8, 2023/2024" loading="lazy"><figcaption>Screenshot recenzije 8</figcaption></figure>
+                    <figure class="review-placeholder is-empty" data-review-year="2023/2024"><img class="review-image" src="assets/ss9.png" alt="Screenshot recenzije 9, 2023/2024" loading="lazy"><figcaption>Screenshot recenzije 9</figcaption></figure>
+                    <figure class="review-placeholder is-empty" data-review-year="2023/2024"><img class="review-image" src="assets/ss10.png" alt="Screenshot recenzije 10, 2023/2024" loading="lazy"><figcaption>Screenshot recenzije 10</figcaption></figure>
+                    <figure class="review-placeholder is-empty" data-review-year="2023/2024"><img class="review-image" src="assets/ss11.png" alt="Screenshot recenzije 11, 2023/2024" loading="lazy"><figcaption>Screenshot recenzije 11</figcaption></figure>
+                    <figure class="review-placeholder is-empty" data-review-year="2023/2024"><img class="review-image" src="assets/ss12.png" alt="Screenshot recenzije 12, 2023/2024" loading="lazy"><figcaption>Screenshot recenzije 12</figcaption></figure>
+                    <figure class="review-placeholder is-empty" data-review-year="2022/2023"><img class="review-image" src="assets/ss13.png" alt="Screenshot recenzije 13, 2022/2023" loading="lazy"><figcaption>Screenshot recenzije 13</figcaption></figure>
+                    <figure class="review-placeholder is-empty" data-review-year="2022/2023"><img class="review-image" src="assets/ss14.png" alt="Screenshot recenzije 14, 2022/2023" loading="lazy"><figcaption>Screenshot recenzije 14</figcaption></figure>
+                    <figure class="review-placeholder is-empty" data-review-year="2022/2023"><img class="review-image" src="assets/ss15.png" alt="Screenshot recenzije 15, 2022/2023" loading="lazy"><figcaption>Screenshot recenzije 15</figcaption></figure>
+                    <figure class="review-placeholder is-empty" data-review-year="2022/2023"><img class="review-image" src="assets/ss16.png" alt="Screenshot recenzije 16, 2022/2023" loading="lazy"><figcaption>Screenshot recenzije 16</figcaption></figure>
+                    <figure class="review-placeholder is-empty" data-review-year="2022/2023"><img class="review-image" src="assets/ss17.png" alt="Screenshot recenzije 17, 2022/2023" loading="lazy"><figcaption>Screenshot recenzije 17</figcaption></figure>
+                    <figure class="review-placeholder is-empty" data-review-year="2022/2023"><img class="review-image" src="assets/ss18.png" alt="Screenshot recenzije 18, 2022/2023" loading="lazy"><figcaption>Screenshot recenzije 18</figcaption></figure>
+                    <figure class="review-placeholder is-empty" data-review-year="2020/2021"><img class="review-image" src="assets/ss19.png" alt="Screenshot recenzije 19, 2020/2021" loading="lazy"><figcaption>Screenshot recenzije 19</figcaption></figure>
+                    <figure class="review-placeholder is-empty" data-review-year="2020/2021"><img class="review-image" src="assets/ss20.png" alt="Screenshot recenzije 20, 2020/2021" loading="lazy"><figcaption>Screenshot recenzije 20</figcaption></figure>
+                    <figure class="review-placeholder is-empty" data-review-year="2020/2021"><img class="review-image" src="assets/ss21.png" alt="Screenshot recenzije 21, 2020/2021" loading="lazy"><figcaption>Screenshot recenzije 21</figcaption></figure>
+                    <figure class="review-placeholder is-empty" data-review-year="2020/2021"><img class="review-image" src="assets/ss22.png" alt="Screenshot recenzije 22, 2020/2021" loading="lazy"><figcaption>Screenshot recenzije 22</figcaption></figure>
+                    <figure class="review-placeholder is-empty" data-review-year="2020/2021"><img class="review-image" src="assets/ss23.png" alt="Screenshot recenzije 23, 2020/2021" loading="lazy"><figcaption>Screenshot recenzije 23</figcaption></figure>
+                    <figure class="review-placeholder is-empty" data-review-year="2020/2021"><img class="review-image" src="assets/ss24.png" alt="Screenshot recenzije 24, 2020/2021" loading="lazy"><figcaption>Screenshot recenzije 24</figcaption></figure>
+                    <figure class="review-placeholder is-empty" data-review-year="2017/2018"><img class="review-image" src="assets/ss29.png" alt="Screenshot recenzije 29, 2017/2018" loading="lazy"><figcaption>Screenshot recenzije 29</figcaption></figure>
+                    <figure class="review-placeholder is-empty" data-review-year="2017/2018"><img class="review-image" src="assets/ss30.png" alt="Screenshot recenzije 30, 2017/2018" loading="lazy"><figcaption>Screenshot recenzije 30</figcaption></figure>
+                    <figure class="review-placeholder is-empty" data-review-year="2017/2018"><img class="review-image" src="assets/ss31.png" alt="Screenshot recenzije 31, 2017/2018" loading="lazy"><figcaption>Screenshot recenzije 31</figcaption></figure>
+                    <figure class="review-placeholder is-empty" data-review-year="2017/2018"><img class="review-image" src="assets/ss32.png" alt="Screenshot recenzije 32, 2017/2018" loading="lazy"><figcaption>Screenshot recenzije 32</figcaption></figure>
+                    <figure class="review-placeholder is-empty" data-review-year="2018/2019"><img class="review-image" src="assets/ss33.png" alt="Screenshot recenzije 33, 2018/2019" loading="lazy"><figcaption>Screenshot recenzije 33</figcaption></figure>
+                    <figure class="review-placeholder is-empty" data-review-year="2018/2019"><img class="review-image" src="assets/ss34.png" alt="Screenshot recenzije 34, 2018/2019" loading="lazy"><figcaption>Screenshot recenzije 34</figcaption></figure>
+                    <figure class="review-placeholder is-empty" data-review-year="2018/2019"><img class="review-image" src="assets/ss35.png" alt="Screenshot recenzije 35, 2018/2019" loading="lazy"><figcaption>Screenshot recenzije 35</figcaption></figure>
+                    <figure class="review-placeholder is-empty" data-review-year="2018/2019"><img class="review-image" src="assets/ss36.png" alt="Screenshot recenzije 36, 2018/2019" loading="lazy"><figcaption>Screenshot recenzije 36</figcaption></figure>
+                    <figure class="review-placeholder is-empty" data-review-year="2018/2019"><img class="review-image" src="assets/ss37.png" alt="Screenshot recenzije 37, 2018/2019" loading="lazy"><figcaption>Screenshot recenzije 37</figcaption></figure>
+                    <figure class="review-placeholder is-empty" data-review-year="2021/2022"><img class="review-image" src="assets/ss25.png" alt="Screenshot recenzije 25, 2021/2022" loading="lazy"><figcaption>Screenshot recenzije 25</figcaption></figure>
+                    <figure class="review-placeholder is-empty" data-review-year="2021/2022"><img class="review-image" src="assets/ss26.png" alt="Screenshot recenzije 26, 2021/2022" loading="lazy"><figcaption>Screenshot recenzije 26</figcaption></figure>
+                    <figure class="review-placeholder is-empty" data-review-year="2021/2022"><img class="review-image" src="assets/ss27.png" alt="Screenshot recenzije 27, 2021/2022" loading="lazy"><figcaption>Screenshot recenzije 27</figcaption></figure>
+                    <figure class="review-placeholder is-empty" data-review-year="2021/2022"><img class="review-image" src="assets/ss28.png" alt="Screenshot recenzije 28, 2021/2022" loading="lazy"><figcaption>Screenshot recenzije 28</figcaption></figure>
+                    <figure class="review-placeholder is-empty" data-review-year="2024/2025"><img class="review-image" src="assets/ss4.png" alt="Screenshot recenzije 4, 2024/2025" loading="lazy"><figcaption>Screenshot recenzije 4</figcaption></figure>
+                    <figure class="review-placeholder is-empty" data-review-year="2024/2025"><img class="review-image" src="assets/ss5.png" alt="Screenshot recenzije 5, 2024/2025" loading="lazy"><figcaption>Screenshot recenzije 5</figcaption></figure>
+                    <figure class="review-placeholder is-empty" data-review-year="2024/2025"><img class="review-image" src="assets/ss6.png" alt="Screenshot recenzije 6, 2024/2025" loading="lazy"><figcaption>Screenshot recenzije 6</figcaption></figure>
+                    <figure class="review-placeholder is-empty" data-review-year="2024/2025"><img class="review-image" src="assets/ss7.png" alt="Screenshot recenzije 7, 2024/2025" loading="lazy"><figcaption>Screenshot recenzije 7</figcaption></figure>
                 </div>
                 <div class="review-controls" aria-label="Navigacija recenzija">
                     <button id="previous-review" type="button" aria-label="Prethodna recenzija">←</button>
-                    <span class="review-count" aria-live="polite">1 / 3</span>
+                    <span class="review-count" aria-live="polite">1 / 38</span>
                     <button id="next-review" type="button" aria-label="Sljedeća recenzija">→</button>
                 </div>
             </div>

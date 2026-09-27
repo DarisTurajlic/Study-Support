@@ -35,12 +35,17 @@ html{overflow-x:clip}
 .nav-booking{padding:11px 19px;margin-left:4px;white-space:nowrap}
 .section-heading h2,.motivation h2,.contact h2{letter-spacing:0}
 .review-grid{grid-template-columns:repeat(3,minmax(0,1fr));align-items:stretch}
-.review-placeholder{position:relative;display:grid;min-height:300px;aspect-ratio:4/3;place-items:center;overflow:hidden;border:1px dashed #ae987e;border-radius:4px;background:#f1e8da}
+.review-placeholder{position:relative;display:grid;width:min(100%,400px);min-height:0;aspect-ratio:1290/2200;place-items:center;justify-self:center;overflow:hidden;border:1px dashed #ae987e;border-radius:4px;background:#f1e8da}
+.review-placeholder[data-review-year="all"]{width:min(100%,640px)}
 .review-image{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#fff}
 .review-placeholder figcaption{display:none;color:var(--muted);font:italic 16px var(--serif)}
 .review-placeholder.is-empty figcaption{display:grid;place-items:center}
 .review-placeholder:not(.review-current){display:none}
-.review-grid{grid-template-columns:minmax(0,700px);justify-content:center}
+.review-grid{grid-template-columns:minmax(0,640px);justify-content:center}
+.review-filters{display:flex;justify-content:center;flex-wrap:wrap;gap:8px;margin-top:24px}
+.review-filter{padding:8px 14px;border:1px solid var(--line);border-radius:20px;background:transparent;color:var(--wood-dark);font:inherit;font-size:14px;transition:background .2s,color .2s}
+.review-filter[aria-pressed="true"]{border-color:var(--wood-dark);background:var(--wood-dark);color:#fff}
+.review-filter:focus-visible{outline:3px solid var(--ochre);outline-offset:3px}
 .review-controls{display:flex;justify-content:center;align-items:center;gap:18px;margin-top:24px}
 .review-controls button{width:40px;height:40px;border:1px solid var(--line);border-radius:50%;background:transparent;color:var(--wood-dark);font-size:22px;transition:background .2s,color .2s}
 .review-controls button:hover{background:var(--wood-dark);color:#fff}
@@ -67,7 +72,7 @@ html{overflow-x:clip}
 	.registration-note{max-width:390px}
 	.main-nav{top:70px}
 	.review-grid{grid-template-columns:minmax(0,1fr);gap:16px}
-	.review-placeholder{min-height:220px;aspect-ratio:4/3}
+	.review-placeholder{min-height:0;aspect-ratio:1290/2200}
 	.motivation-grid{grid-template-columns:1fr}
 }
 @media(max-width:430px){
