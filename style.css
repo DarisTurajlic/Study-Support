@@ -98,7 +98,10 @@ html{overflow-x:clip}
 .viber-button:hover{background:var(--ink)}
 .viber-button svg{width:28px;height:28px;flex:none}
 .viber-button:focus-visible{outline:3px solid #fff;outline-offset:4px}
-@media(max-width:850px){.contact-background{height:auto;padding-top:56.28vw;background-position:top center;background-size:100% auto}.contact-info{position:static;width:auto;padding:42px 0 50px;background:#e7dccb;transform:none}.contact-info h2{font-size:27px}.contact-info p{font-size:16px}}
+@media(min-width:851px){.contact-background{height:100vh;height:100svh;min-height:100vh;min-height:100svh;aspect-ratio:auto;overflow:hidden;background-position:center top;background-size:100% 100%}.contact-info-inner{transform:translateY(27px)}.contact-info h2,.contact-info p{transform:none}.contact-info .viber-button{margin-top:0}}
+.mobile-contact-break{display:none}
+@media(max-width:850px){.contact-background{height:auto;min-height:0;padding-top:0;aspect-ratio:941/1672;background-image:url('assets/kontakt-phone.png');background-position:center top;background-size:100% 100%}.contact-info{position:absolute;top:calc(30% + 5px);left:0;width:100%;padding:0;transform:none;background:transparent;text-align:center}.contact-info-inner{--contact-align-shift:calc((min(100vw - 50.8px, 600px) / 2) - 104px);width:min(100% - 36px,600px);gap:10px}.contact-info h2{align-self:flex-end;font-size:22px;line-height:1.2;transform:translateX(-40px)}.contact-info p{max-width:260px;margin-top:8px;padding:0;border-radius:0;background:transparent;font-size:14px;line-height:1.35;transform:translateX(var(--contact-align-shift))}.mobile-contact-break{display:block}.contact-info .viber-button{margin-top:0;padding:10px 16px;transform:translateX(var(--contact-align-shift))}}
+@media(max-width:360px){.contact-info-inner{--contact-align-shift:calc((min(100vw - 50.8px, 600px) / 2) - 99px);gap:8px}.contact-info h2{font-size:20px;line-height:1.1}.contact-info p{font-size:12px;line-height:1.25}.contact-info .viber-button{padding:8px 14px}.contact-info .viber-button svg{width:24px;height:24px}}
 .motivation-heading h2{margin-top:22px;color:var(--ink);font:700 clamp(32px,4vw,48px)/1.22 var(--serif)}
 .motivation-heading h2 em{color:var(--wood-dark);font-weight:400}
 .motivation-intro{max-width:810px;margin-top:22px;color:var(--muted);font:17px/1.75 var(--serif)}
@@ -126,7 +129,6 @@ html{overflow-x:clip}
 	.registration-note{font-size:12px}
 	.hero-copy>.button{gap:8px;padding:10px 12px;font-size:12px}
 	.hero:before{inset:0;aspect-ratio:auto;background-image:linear-gradient(90deg,rgba(245,240,231,.96) 0%,rgba(245,240,231,.84) 42%,rgba(245,240,231,.18) 68%,rgba(245,240,231,0) 100%),url('assets/pocetna-mobile.png');background-position:center,center top;background-size:100% 100%,100% 100%;background-repeat:no-repeat;background-attachment:scroll}
-	.contact-background{background-position:center top;background-size:100% 56.28vw}
 }
 .motivation-cards .motivation-card{border-radius:5px 5px 0 0}
 .motivation-visual{width:100%;margin:0;overflow:hidden;border-radius:0 0 4px 4px}
