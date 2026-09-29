@@ -59,7 +59,7 @@ html{overflow-x:clip}
 	.nav-wrap{gap:14px}
 	.logo{font-size:18px}
 	.nav-booking{margin-left:auto;padding:9px 13px;font-size:14px}
-	.menu-toggle{margin-left:0}
+	.menu-toggle{margin-left:auto}
 	.hero,.hero-grid{min-height:690px}
 	.hero:before{background:linear-gradient(180deg,rgba(245,240,231,.98) 0%,rgba(245,240,231,.91) 40%,rgba(245,240,231,.28) 100%),url('assets/pocetna.png') 69% center/auto 100% no-repeat}
 	.hero-grid{display:block}
