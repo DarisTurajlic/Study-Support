@@ -88,6 +88,17 @@ html{overflow-x:clip}
 .motivation{padding:100px 0 110px;background:#eef0e7}
 .motivation-content{width:min(1120px,calc(100% - 64px));margin:0 auto}
 .motivation-heading{max-width:900px}
+.contact-background{position:relative;width:100%;height:100vh;background:url('assets/kontakt.png') center/cover no-repeat}
+.contact-info{position:absolute;top:52%;left:62%;width:min(42%,620px);padding:0;transform:translate(-50%,-50%);text-align:center}
+.contact-info-inner{display:flex;flex-direction:column;align-items:center;gap:18px}
+.contact-info h2{color:var(--ink);font:700 30px/1.2 var(--serif);transform:translateY(7px)}
+.contact-info p{max-width:850px;color:var(--ink);font:700 18px/1.55 var(--sans)}
+.viber-button{gap:10px;padding:13px 20px;border-radius:6px;background:var(--wood-dark);color:#fff;box-shadow:0 5px 16px rgba(61,48,40,.24);white-space:nowrap}
+.contact-info .viber-button{position:static;margin-top:4px;transform:none}
+.viber-button:hover{background:var(--ink)}
+.viber-button svg{width:28px;height:28px;flex:none}
+.viber-button:focus-visible{outline:3px solid #fff;outline-offset:4px}
+@media(max-width:850px){.contact-background{height:auto;padding-top:56.28vw;background-position:top center;background-size:100% auto}.contact-info{position:static;width:auto;padding:42px 0 50px;background:#e7dccb;transform:none}.contact-info h2{font-size:27px}.contact-info p{font-size:16px}}
 .motivation-heading h2{margin-top:22px;color:var(--ink);font:700 clamp(32px,4vw,48px)/1.22 var(--serif)}
 .motivation-heading h2 em{color:var(--wood-dark);font-weight:400}
 .motivation-intro{max-width:810px;margin-top:22px;color:var(--muted);font:17px/1.75 var(--serif)}
@@ -99,6 +110,12 @@ html{overflow-x:clip}
 .motivation-rule{width:42px;height:3px;margin-top:18px;background:var(--ochre)}
 .motivation-card>p{margin-top:17px;color:var(--muted);font-size:15px;line-height:1.75}
 .motivation-quote{align-self:flex-start;margin:auto 0 8px 8px;padding-top:24px;color:var(--wood-dark);font:500 24px/1.3 var(--hand);transform:rotate(-4deg)}
+@media(max-width:850px){
+	.hero{min-height:unset;height:auto;padding-bottom:0}
+	.hero-grid{min-height:unset}
+	.hero:before{inset:0;aspect-ratio:auto;background-image:linear-gradient(180deg,rgba(245,240,231,.98) 0%,rgba(245,240,231,.83) 45%,rgba(245,240,231,.18) 100%),url('assets/pocetna.png');background-position:center,69% center;background-size:100% 100%,cover;background-repeat:no-repeat;background-attachment:scroll}
+	.contact-background{background-position:center top;background-size:100% 56.28vw}
+}
 .motivation-cards .motivation-card{border-radius:5px 5px 0 0}
 .motivation-visual{width:100%;margin:0;overflow:hidden;border-radius:0 0 4px 4px}
 .motivation-visual img{display:block;width:100%;height:auto}
