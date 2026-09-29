@@ -88,7 +88,7 @@ html{overflow-x:clip}
 .motivation{padding:100px 0 110px;background:#eef0e7}
 .motivation-content{width:min(1120px,calc(100% - 64px));margin:0 auto}
 .motivation-heading{max-width:900px}
-.contact-background{position:relative;width:100%;height:100vh;background:url('assets/kontakt.png') center/cover no-repeat}
+.contact-background{position:relative;width:100%;aspect-ratio:1672/941;background-color:#e7dccb;background-image:url('assets/kontakt.png');background-position:center;background-size:cover;background-repeat:no-repeat}
 .contact-info{position:absolute;top:52%;left:62%;width:min(42%,620px);padding:0;transform:translate(-50%,-50%);text-align:center}
 .contact-info-inner{display:flex;flex-direction:column;align-items:center;gap:18px}
 .contact-info h2{color:var(--ink);font:700 30px/1.2 var(--serif);transform:translateY(7px)}
@@ -110,10 +110,22 @@ html{overflow-x:clip}
 .motivation-rule{width:42px;height:3px;margin-top:18px;background:var(--ochre)}
 .motivation-card>p{margin-top:17px;color:var(--muted);font-size:15px;line-height:1.75}
 .motivation-quote{align-self:flex-start;margin:auto 0 8px 8px;padding-top:24px;color:var(--wood-dark);font:500 24px/1.3 var(--hand);transform:rotate(-4deg)}
+@media(min-width:851px){.hero:before{background-position:center,right center;background-size:100% 100%,contain}}
 @media(max-width:850px){
 	.hero{min-height:unset;height:auto;padding-bottom:0}
 	.hero-grid{min-height:unset}
-	.hero:before{inset:0;aspect-ratio:auto;background-image:linear-gradient(180deg,rgba(245,240,231,.98) 0%,rgba(245,240,231,.83) 45%,rgba(245,240,231,.18) 100%),url('assets/pocetna.png');background-position:center,69% center;background-size:100% 100%,cover;background-repeat:no-repeat;background-attachment:scroll}
+	.hero-copy{width:50%;max-width:none;padding:42px 0 35px}
+	.hero-copy .eyebrow{gap:7px;font-size:9px;letter-spacing:1px}
+	.hero-copy h1{font-size:clamp(26px,8vw,34px);line-height:1.08}
+	.hero-subtitle{font-size:17px}
+	.generation-block{margin-top:18px}
+	.generation-label{font-size:16px}
+	.generation-year{font-size:22px}
+	.start-date{gap:8px;font-size:12px}
+	.start-date svg{width:18px;height:18px}
+	.registration-note{font-size:12px}
+	.hero-copy>.button{gap:8px;padding:10px 12px;font-size:12px}
+	.hero:before{inset:0;aspect-ratio:auto;background-image:linear-gradient(90deg,rgba(245,240,231,.96) 0%,rgba(245,240,231,.84) 42%,rgba(245,240,231,.18) 68%,rgba(245,240,231,0) 100%),url('assets/pocetna-mobile.png');background-position:center,center 30%;background-size:100% 100%,cover;background-repeat:no-repeat;background-attachment:scroll}
 	.contact-background{background-position:center top;background-size:100% 56.28vw}
 }
 .motivation-cards .motivation-card{border-radius:5px 5px 0 0}
