@@ -112,7 +112,7 @@ html{overflow-x:clip}
 .motivation-quote{align-self:flex-start;margin:auto 0 8px 8px;padding-top:24px;color:var(--wood-dark);font:500 24px/1.3 var(--hand);transform:rotate(-4deg)}
 @media(min-width:851px){.hero:before{background-position:center,right center;background-size:100% 100%,contain}}
 @media(max-width:850px){
-	.hero{min-height:unset;height:auto;padding-bottom:0}
+	.hero{min-height:56.28vw;height:auto;padding-bottom:0}
 	.hero-grid{min-height:unset}
 	.hero-copy{width:50%;max-width:none;padding:42px 0 35px}
 	.hero-copy .eyebrow{gap:7px;font-size:9px;letter-spacing:1px}
@@ -125,7 +125,7 @@ html{overflow-x:clip}
 	.start-date svg{width:18px;height:18px}
 	.registration-note{font-size:12px}
 	.hero-copy>.button{gap:8px;padding:10px 12px;font-size:12px}
-	.hero:before{inset:0;aspect-ratio:auto;background-image:linear-gradient(90deg,rgba(245,240,231,.96) 0%,rgba(245,240,231,.84) 42%,rgba(245,240,231,.18) 68%,rgba(245,240,231,0) 100%),url('assets/pocetna-mobile.png');background-position:center,center 30%;background-size:100% 100%,cover;background-repeat:no-repeat;background-attachment:scroll}
+	.hero:before{inset:0;aspect-ratio:auto;background-image:linear-gradient(90deg,rgba(245,240,231,.96) 0%,rgba(245,240,231,.84) 42%,rgba(245,240,231,.18) 68%,rgba(245,240,231,0) 100%),url('assets/pocetna-mobile.png');background-position:center,center top;background-size:100% 100%,100% 100%;background-repeat:no-repeat;background-attachment:scroll}
 	.contact-background{background-position:center top;background-size:100% 56.28vw}
 }
 .motivation-cards .motivation-card{border-radius:5px 5px 0 0}
