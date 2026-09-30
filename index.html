@@ -14,11 +14,11 @@
 <body>
     <header class="site-header">
         <div class="container nav-wrap">
-            <a class="logo" href="#pocetna" aria-label="Početna stranica"><span>π</span> Instruktivna nastava</a>
+            <a class="logo" href="#pocetna" aria-label="Početna stranica">Instruktivna nastava</a>
             <nav class="main-nav" aria-label="Glavna navigacija">
                 <a class="active" href="#pocetna">Početna</a>
-                <a href="#motivacija">Motivacija</a>
                 <a href="#recenzije">Recenzije</a>
+                <a href="#motivacija">Motivacija</a>
                 <a href="#kontakt">Kontakt</a>
             </nav>
             <button class="menu-toggle" type="button" aria-label="Otvori navigaciju" aria-expanded="false">☰</button>
@@ -67,7 +67,7 @@
                     <button class="review-filter" type="button" data-review-year="2024/2025" aria-pressed="false">2024/2025</button>
                 </div>
                 <div class="review-grid">
-                    <figure class="review-placeholder is-empty review-current" data-review-year="all"><img class="review-image" src="assets/napomena-motivacija.png" alt="Napomena o motivaciji" loading="lazy"><figcaption>Napomena o motivaciji</figcaption></figure>
+                    <figure class="review-placeholder is-empty review-current" data-review-year="all"><img class="review-image" src="assets/napomena-motivacija.png" alt="Napomena o motivaciji" loading="lazy"><figcaption>Napomena o motivaciji</figcaption><a class="review-mail-button" href="mailto:studysupport.recenzije@gmail.com">Zahtjev za uklanjanje recenzije</a></figure>
                     <figure class="review-placeholder is-empty" data-review-year="2024/2025"><img class="review-image" src="assets/ss1.png" alt="Screenshot recenzije 1, 2024/2025" loading="lazy"><figcaption>Screenshot recenzije 1</figcaption></figure>
                     <figure class="review-placeholder is-empty" data-review-year="2023/2024"><img class="review-image" src="assets/ss2.png" alt="Screenshot recenzije 2, 2023/2024" loading="lazy"><figcaption>Screenshot recenzije 2</figcaption></figure>
                     <figure class="review-placeholder is-empty" data-review-year="2023/2024"><img class="review-image" src="assets/ss3.png" alt="Screenshot recenzije 3, 2023/2024" loading="lazy"><figcaption>Screenshot recenzije 3</figcaption></figure>
@@ -118,7 +118,8 @@
             <div class="container motivation-content">
                 <header class="motivation-heading">
                     <p class="eyebrow"><span></span> Motivacija</p>
-                    <h2>U svijetu bezgraničnih mogućnosti,<br><em>postoje granice vlastite nemogućnosti.</em></h2>
+                    <h2>U svijetu bezgraničnih mogućnosti, <br><em>postoje granice vlastite nemogućnosti.</em></h2>
+                    <p class="motivation-intro">Danas je pomoć u učenju dostupnija nego ikada uz AI, ali ono što zaista znamo pokazuje se tek kada je nema</p>
                     <p class="motivation-intro">Misija i smisao Study Supporta je da kroz redovan rad student prepozna svoje greške, otkloni nedostatke i postane sigurniji u samostalnom rješavanju problema.</p>
                 </header>
                 <div class="motivation-cards">
@@ -126,7 +127,7 @@
                         <div class="motivation-icon" aria-hidden="true">
                             <svg viewBox="0 0 32 32" fill="none"><path d="M16 8.5c-3.1-2.4-7.3-2.7-11-1.2v17c3.8-1.5 8-1.2 11 1.2m0-17c3.1-2.4 7.3-2.7 11-1.2v17c-3.8-1.5-8-1.2-11 1.2m0-17v18.2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
                         </div>
-                        <h3>Zašto tako intenzivan rad?</h3>
+                        <h3>Zašto intenzivan rad?</h3>
                         <span class="motivation-rule" aria-hidden="true"></span>
                         <p>Redovan i usmjeren rad pomaže da se rupe u znanju uoče na vrijeme, a gradivo usvoji temeljito, korak po korak.</p>
                     </article>
@@ -136,7 +137,12 @@
                         </div>
                         <h3>Da li ima napretka ili stojimo u mjestu?</h3>
                         <span class="motivation-rule" aria-hidden="true"></span>
-                        <p>Napredak se vidi kada student prepoznaje vlastite greške, razumije postupak i sve sigurnije rješava zadatke samostalno.</p>
+                        <p>Napredak se prati kroz kratka pitanja i testove s ciljem da se dobiju odgovori:</p>
+                        <ol class="motivation-list">
+                            <li><span class="motivation-step" aria-hidden="true">1</span>Da li je prethodno gradivo prerađeno?</li>
+                            <li><span class="motivation-step" aria-hidden="true">2</span>Da li su pojmovi i metodologija zaista usvojeni?</li>
+                            <li><span class="motivation-step" aria-hidden="true">3</span>Da li student može naučeno primijeniti samostalno i pod pritiskom?</li>
+                        </ol>
                     </article>
                     <article class="motivation-card motivation-card-responsibility">
                         <div class="motivation-icon" aria-hidden="true">
@@ -144,7 +150,7 @@
                         </div>
                         <h3>Naša uloga, tvoja odgovornost</h3>
                         <span class="motivation-rule" aria-hidden="true"></span>
-                        <p>Mi pružamo znanje, strukturu i podršku. Tvoj trud, redovnost i aktivno učešće pretvaraju ih u stvarni napredak.</p>
+                        <p>Study Support greške primjećuje, stalno na njih ukazuje, ali student je taj koji ih svojim radom ispravlja.</p>
                         <blockquote class="motivation-quote">Isti trud<br>Više samopouzdanja<br>Šire mogućnosti</blockquote>
                     </article>
                 </div>
@@ -167,6 +173,7 @@
                     </svg>
                     Javite se na viber →
                 </a>
+                <blockquote class="contact-quote">Ni jedna instruktivna nastava nije zamjena za nastavu na matičnom fakultetu.</blockquote>
                 </div>
             </div>
         </section>

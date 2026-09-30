@@ -16,7 +16,7 @@ let activeReviewYear = 'all';
 let reviewIndex = 0;
 
 function showReview(index) {
-    const visibleCards = [...reviewCards].filter((card) => activeReviewYear === 'all' || card.dataset.reviewYear === 'all' || card.dataset.reviewYear === activeReviewYear);
+    const visibleCards = [...reviewCards].filter((card) => activeReviewYear === 'all' || card.dataset.reviewYear === activeReviewYear);
     reviewIndex = (index + visibleCards.length) % visibleCards.length;
     reviewCards.forEach((card) => card.classList.toggle('review-current', card === visibleCards[reviewIndex]));
     reviewCount.textContent = `${reviewIndex + 1} / ${visibleCards.length}`;
