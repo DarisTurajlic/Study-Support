@@ -113,7 +113,7 @@ html{overflow-x:clip}
 @media(max-width:360px){.contact-info-inner{--contact-align-shift:calc((min(100vw - 50.8px, 600px) / 2) - 99px);gap:8px}.contact-info h2{font-size:20px;line-height:1.1}.contact-info p{font-size:12px;line-height:1.25}.contact-info .viber-button{padding:8px 14px}.contact-info .viber-button svg{width:24px;height:24px}}
 .motivation-heading h2{margin-top:22px;color:var(--ink);font:700 clamp(32px,4vw,48px)/1.22 var(--serif)}
 .motivation-heading h2 em{color:var(--ink);font:700 clamp(32px,4vw,48px)/1.22 var(--serif)}
-.motivation-intro{max-width:810px;margin-top:22px;color:var(--muted);font:17px/1.75 var(--serif)}
+.motivation-intro{max-width:810px;margin-top:22px;color:var(--muted);font:17px/1.75 var(--serif);text-align:justify}
 .motivation-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-top:52px;align-items:stretch}
 .motivation-card{display:flex;min-height:340px;flex-direction:column;padding:30px 28px;border:1px solid rgba(139,96,62,.2);border-radius:5px;background:rgba(252,250,245,.8)}
 .motivation-icon{display:grid;width:52px;height:52px;place-items:center;border:1px solid rgba(139,96,62,.32);border-radius:50%;color:var(--wood-dark); background-color: #8b603e}
@@ -152,7 +152,7 @@ html{overflow-x:clip}
 	.motivation-content{width:min(100% - 36px,600px)}
 	.motivation-heading h2{font-size:clamp(20px,42px)}
 	.motivation-heading h2 br{display:none}
-	.motivation-intro{font-size:16px}
+	.motivation-intro{font-size:16px;text-align:left}
 	.motivation-cards{grid-template-columns:1fr;gap:14px;margin-top:36px;}
 	.motivation-card{min-height:0;padding:25px}
 	.motivation-cards .motivation-card{border-radius:5px}
