@@ -139,7 +139,8 @@ html{overflow-x:clip}
 	.start-date{gap:8px;font-size:12px}
 	.start-date svg{width:18px;height:18px}
 	.start-date-copy>p:first-child{font-size:clamp(12px,3.3vw,13px);line-height:1.5}
-	.registration-note{color:var(--ink);font-size:12px;font-weight:600}
+	.registration-note{color:var(--ink);font-size:12px;font-weight:600;text-align:left}
+	.registration-note .registration-long-break{display:none}
 	.hero-copy>.button{gap:8px;padding:10px 12px;font-size:12px}
 	.hero:before{inset:0;aspect-ratio:auto;background-image:linear-gradient(90deg,rgba(245,240,231,.96) 0%,rgba(245,240,231,.84) 42%,rgba(245,240,231,.18) 68%,rgba(245,240,231,0) 100%),url('assets/pocetna-mobile.png');background-position:center,center top;background-size:100% 100%,100% 100%;background-repeat:no-repeat;background-attachment:scroll}
 }
