@@ -181,3 +181,18 @@ html{overflow-x:clip}
 }
 @media(prefers-reduced-motion:reduce){.motivation-card{transition:none}.motivation-card:hover{transform:none}}
 .experiences .section-heading h2 em{color:inherit;font:inherit}
+
+.whatsapp-dialog{width:min(520px,calc(100% - 32px));max-width:none;max-height:min(86vh,720px);margin:auto;padding:0;overflow:auto;border:1px solid var(--line);border-radius:8px;background:var(--paper);color:var(--ink);box-shadow:0 24px 80px rgba(35,25,18,.3)}
+.whatsapp-dialog::backdrop{background:rgba(30,24,19,.66);backdrop-filter:blur(3px)}
+.whatsapp-dialog-content{padding:clamp(24px,5vw,38px)}
+.whatsapp-dialog-content h2{margin:12px 0 10px;font:700 27px/1.2 var(--serif)}
+.whatsapp-dialog-content>p{color:var(--muted)}
+.whatsapp-dialog-fields{display:grid;gap:8px;margin:16px 0;padding:0;list-style:none}
+.whatsapp-dialog-fields li{padding:10px 12px;border-left:3px solid var(--ochre);background:var(--cream);font-weight:600}
+.whatsapp-dialog-content .whatsapp-dialog-note{margin-top:16px;font:15px/1.65 var(--serif)}
+.whatsapp-dialog-content .whatsapp-dialog-hint{margin-top:13px;font-size:13px}
+.whatsapp-dialog-actions{display:flex;justify-content:flex-end;gap:10px;margin-top:24px}
+.whatsapp-dialog-actions button{min-height:44px;padding:10px 16px;border:1px solid var(--line);border-radius:5px;background:transparent;color:var(--ink);font:600 14px var(--sans)}
+.whatsapp-dialog-actions .whatsapp-dialog-confirm{border-color:#1f7a45;background:#1f7a45;color:#fff}
+.whatsapp-dialog-actions button:focus-visible{outline:3px solid var(--ochre);outline-offset:3px}
+@media(max-width:430px){.whatsapp-dialog-actions{flex-direction:column-reverse}.whatsapp-dialog-actions button{width:100%}}

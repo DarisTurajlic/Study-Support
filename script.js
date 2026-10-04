@@ -44,3 +44,34 @@ navigation.querySelectorAll('a').forEach((link) => link.addEventListener('click'
     menuButton.setAttribute('aria-expanded', 'false');
     menuButton.setAttribute('aria-label', 'Otvori navigaciju');
 }));
+
+const whatsappDialog = document.querySelector('#whatsapp-dialog');
+const whatsappConfirmButton = whatsappDialog.querySelector('.whatsapp-dialog-confirm');
+const whatsappCancelButton = whatsappDialog.querySelector('.whatsapp-dialog-cancel');
+let pendingWhatsAppUrl = '';
+
+document.querySelectorAll('a[href^="https://wa.me/"]').forEach((link) => {
+    link.addEventListener('click', (event) => {
+        event.preventDefault();
+        pendingWhatsAppUrl = link.href;
+        whatsappDialog.showModal();
+    });
+});
+
+whatsappCancelButton.addEventListener('click', () => {
+    pendingWhatsAppUrl = '';
+    whatsappDialog.close();
+});
+
+whatsappDialog.addEventListener('cancel', () => {
+    pendingWhatsAppUrl = '';
+});
+
+whatsappConfirmButton.addEventListener('click', () => {
+    if (!pendingWhatsAppUrl) return;
+
+    const whatsappUrl = pendingWhatsAppUrl;
+    pendingWhatsAppUrl = '';
+    whatsappDialog.close();
+    window.location.assign(whatsappUrl);
+});
